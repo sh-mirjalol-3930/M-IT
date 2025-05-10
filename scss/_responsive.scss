@@ -1,0 +1,123 @@
+// Extra small devices (phones)
+@media only screen and (max-width: 575.98px) {
+    .header {
+        padding: 10px 0;
+        &__nav {
+            display: none;
+        }
+        &__mobile-menu {
+            display: block;
+        }
+    }
+
+    .hero {
+        &__content {
+            text-align: center;
+            padding: 40px 0;
+        }
+        &__title {
+            font-size: 32px;
+        }
+        &__description {
+            font-size: 16px;
+        }
+    }
+
+    .section {
+        padding: 40px 0;
+        &__title {
+            font-size: 28px;
+        }
+    }
+}
+
+// Small devices (tablets)
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .header {
+        padding: 15px 0;
+    }
+
+    .hero {
+        &__title {
+            font-size: 36px;
+        }
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+}
+
+// Medium devices (tablets, small laptops)
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .header {
+        padding: 20px 0;
+    }
+
+    .hero {
+        &__title {
+            font-size: 42px;
+        }
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+}
+
+// Large devices (desktops)
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+// Extra large devices (large desktops)
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+// Print styles
+@media print {
+    .header__nav,
+    .footer {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+// Extra small devices (phones)
+@media only screen and (max-width: 575.98px) {
+    // ...existing code...
+    .pic {
+        img {
+            display: none;
+        }
+    }
+}
+
+// Small devices (tablets)
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    // ...existing code...
+    .pic {
+        img {
+            display: none;
+        }
+    }
+}
+
+// Medium devices (tablets, small laptops)
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    // ...existing code...
+    .pic {
+        img {
+            display: none;
+        }
+    }
+}
