@@ -198,6 +198,14 @@ footer .row p {
   header nav {
     display: none;
   }
+  main .row {
+    padding: 100px 30px;
+    flex-wrap: wrap;
+  }
+  main .row .pic img {
+    width: 100%;
+    border-radius: 20px;
+  }
 }
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
   .pic img {
