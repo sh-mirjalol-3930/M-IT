@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Caveat:wght@400..700&family=Fredoka:wdth,wght@116.6,300..700&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=M+PLUS+1+Code:wght@100..700&family=M+PLUS+Code+Latin:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+header {
+  box-shadow: 0 0 5000px rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.116);
+}
+header .logo {
+  width: 100px;
+  height: 80px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 200;
+  transition: all 0.3s ease;
+}
+header nav ul li a:hover {
+  text-shadow: 0 0 5px #a31f34;
+}
+header .darkbtn {
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+header .darkbtn:hover {
+  text-shadow: 0 0 5px #a31f34;
+}
+
+body.darkmode {
+  background-color: rgb(36, 35, 35);
+}
+body.darkmode header a {
+  color: #fff;
+}
+body.darkmode header button {
+  color: #fff;
+}
+body.darkmode main {
+  color: #fff;
+}
+
+main .row {
+  padding: 100px;
+  flex-wrap: wrap;
+}
+main .row .pic img {
+  width: 400px;
+  border-radius: 20px;
+}
+main form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main form h3 {
+  font-size: 30px;
+  color: #a31f34;
+  font-weight: 200;
+}
+main form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #767676;
+  font-family: "Caveat";
+  font-size: 18px;
+}
+main form input:focus {
+  outline: none;
+  border: none;
+}
+main form select {
+  background-color: transparent;
+  border: none;
+  color: #767676;
+  border-bottom: 1px solid #767676;
+  font-family: "Caveat";
+  font-size: 18px;
+}
+main form select:focus {
+  outline: none;
+  border: none;
+  font-size: 13px;
+}
+main form button {
+  position: relative;
+  background-color: #a31f34;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 20px 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+main form button:hover {
+  box-shadow: 0 0 5px #a31f34;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #a31f34;
+  box-shadow: 0 -10px 50px #a31f34;
+}
+footer .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .row p {
+  text-align: center;
+  color: #fff;
+  font-weight: 200;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+  font-family: "poppins";
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 350px;
+  margin: 0 auto;
+}
+
+::-moz-selection {
+  background-color: rgba(161, 11, 48, 0.7450980392);
+  color: #fff;
+}
+
+::selection {
+  background-color: rgba(161, 11, 48, 0.7450980392);
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */

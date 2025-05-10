@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>M-IT</title>
+        <link rel="icon" href="./assets/icons/logo.svg" type="image/svg+xml" />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <img class="logo" src="./assets/icons/logo.svg" alt="" />
+                    <nav>
+                        <ul class="row">
+                            <li><a href="#">Asosiy</a></li>
+                            <li><a href="#">Biz haqimizda</a></li>
+                            <li><a href="#">Ulanish</a></li>
+                        </ul>
+                    </nav>
+                    <button class="darkbtn">Dark/Light</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="pic">
+                        <img
+                            src="https://picsum.photos/400"
+                            alt="Random Image"
+                        />
+                    </div>
+                    <form id="myForm">
+                        <h3>
+                            Kurs haqida qiziqsangiz Ma'lumotlarni to'ldiring...
+                        </h3>
+                        <input
+                            type="text"
+                            id="firstname"
+                            placeholder="Ism"
+                            required
+                        />
+                        <input
+                            type="text"
+                            id="lastname"
+                            placeholder="Familiya"
+                            required
+                        />
+                        <select id="type" required>
+                            <option value="">Turini tanlang</option>
+                            <option value="WEB dasturlash">
+                                WEB dasturlash
+                            </option>
+                            <option value="Grafik Dizayn">Grafik Dizayn</option>
+                            <option value="Dasturlash">Dasturlash</option>
+                            <option value="Phyton">Phyton</option>
+                            <option value="Data analytics">
+                                Data analytics
+                            </option>
+                            <option value="Data science">Data science</option>
+                            <option value="Ingliz tili">Ingliz tili</option>
+                            <option value="IELTS,CEFR">IELTS,CEFR</option>
+                            <option value="ENGLISH KIDS">ENGLISH KIDS</option>
+                            <option value="Matematika">Matematika</option>
+                            <option value="Rus tili">Rus tili</option>
+                        </select>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Telefon raqamingiz"
+                            required
+                        />
+                        <input
+                            type="text"
+                            id="savollar"
+                            placeholder="Savollar uchun..."
+                        />
+                        <button type="submit">Yuborish</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <p>
+                        "Har bir o'rganilgan dars - bir qadam - mukofot sari!"
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
