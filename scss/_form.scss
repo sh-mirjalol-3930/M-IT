@@ -1,6 +1,6 @@
 main {
     .row {
-        padding: 100px;
+        padding: 130px;
         flex-wrap: wrap;
         .pic {
             img {
@@ -28,7 +28,7 @@ main {
             background-color: transparent;
             border: none;
             border-bottom: 1px solid $pTextCol;
-            font-family: "Caveat";
+            font-family: "Fredoka";
             font-size: 18px;
             &:focus {
                 outline: none;
@@ -40,13 +40,13 @@ main {
             border: none;
             color: $pTextCol;
             border-bottom: 1px solid $pTextCol;
-            font-family: "Caveat";
+            font-family: "Fredoka";
             font-size: 18px;
 
             &:focus {
                 outline: none;
                 border: none;
-                font-size: 13px;
+                font-size: 15px;
             }
         }
         button {

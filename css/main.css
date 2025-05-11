@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Caveat:wght@400..700&family=Fredoka:wdth,wght@116.6,300..700&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=M+PLUS+1+Code:wght@100..700&family=M+PLUS+Code+Latin:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   box-shadow: 0 0 5000px rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.116);
 }
@@ -44,7 +49,7 @@ body.darkmode main {
 }
 
 main .row {
-  padding: 100px;
+  padding: 130px;
   flex-wrap: wrap;
 }
 main .row .pic img {
@@ -66,7 +71,7 @@ main form input {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #767676;
-  font-family: "Caveat";
+  font-family: "Fredoka";
   font-size: 18px;
 }
 main form input:focus {
@@ -78,13 +83,13 @@ main form select {
   border: none;
   color: #767676;
   border-bottom: 1px solid #767676;
-  font-family: "Caveat";
+  font-family: "Fredoka";
   font-size: 18px;
 }
 main form select:focus {
   outline: none;
   border: none;
-  font-size: 13px;
+  font-size: 15px;
 }
 main form button {
   position: relative;
@@ -103,6 +108,9 @@ main form button:hover {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   padding: 20px 0;
   background-color: #a31f34;
   box-shadow: 0 -10px 50px #a31f34;
