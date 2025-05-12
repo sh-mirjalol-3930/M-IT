@@ -1,7 +1,9 @@
 main {
+    height: 1000px;
     .row {
-        padding: 130px;
+        margin-top: 150px;
         flex-wrap: wrap;
+        justify-content: space-around;
         .pic {
             img {
                 width: 400px;
