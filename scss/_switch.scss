@@ -10,5 +10,25 @@ body.darkmode {
     }
     main {
         color: #fff;
+        .container {
+            .row {
+                .text {
+                    h1 {
+                        color: #fff;
+                    }
+                }
+                .pic {
+                    img {
+                        filter: drop-shadow(0 0 50px rgb(255, 0, 255));
+                    }
+                }
+            }
+            h1 {
+                color: #fff;
+            }
+            .cta-box {
+                color: white;
+            }
+        }
     }
 }

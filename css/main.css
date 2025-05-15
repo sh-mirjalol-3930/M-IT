@@ -27,7 +27,7 @@ header nav ul li a {
   transition: all 0.3s ease;
 }
 header nav ul li a:hover {
-  text-shadow: 0 0 5px #ffb237;
+  text-shadow: 0 0 5px #8c00ff;
 }
 header .darkbtn {
   background-color: transparent;
@@ -35,7 +35,7 @@ header .darkbtn {
   color: black;
 }
 header .darkbtn:hover {
-  text-shadow: 0 0 5px #ffb237;
+  text-shadow: 0 0 5px #8c00ff;
 }
 
 body.darkmode {
@@ -50,6 +50,18 @@ body.darkmode header button {
 body.darkmode main {
   color: #fff;
 }
+body.darkmode main .container .row .text h1 {
+  color: #fff;
+}
+body.darkmode main .container .row .pic img {
+  filter: drop-shadow(0 0 50px rgb(255, 0, 255));
+}
+body.darkmode main .container h1 {
+  color: #fff;
+}
+body.darkmode main .container .cta-box {
+  color: white;
+}
 
 main {
   height: 1000px;
@@ -62,6 +74,21 @@ main .row {
 main .row .pic img {
   width: 400px;
   border-radius: 20px;
+  animation: glow 3s infinite alternate-reverse;
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px rgb(255, 0, 255);
+    filter: drop-shadow(0 0 100px rgb(255, 0, 255));
+  }
+  50% {
+    text-shadow: 0 0 5px rgb(0, 255, 128);
+    filter: drop-shadow(0 0 100px rgb(0, 255, 128));
+  }
+  100% {
+    text-shadow: 0 0 5px rgb(0, 255, 208);
+    filter: drop-shadow(0 0 100px rgb(0, 255, 208));
+  }
 }
 main form {
   width: 400px;
@@ -71,7 +98,7 @@ main form {
 }
 main form h3 {
   font-size: 30px;
-  color: #ffb237;
+  color: #8c00ff;
   font-weight: 200;
 }
 main form input {
@@ -100,7 +127,7 @@ main form select:focus {
 }
 main form button {
   position: relative;
-  background-color: #ffb237;
+  background-color: #8c00ff;
   color: #fff;
   border: none;
   border-radius: 0 0 20px 20px;
@@ -111,18 +138,18 @@ main form button {
   transition: all 0.3s ease;
 }
 main form button:hover {
-  box-shadow: 0 0 5px #ffb237;
+  box-shadow: 0 0 5px #8c00ff;
 }
 
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 5px 0;
-  background-color: rgba(243, 150, 1, 0.8196078431);
+  padding: 2px 0;
+  background-color: rgba(140, 0, 255, 0.8117647059);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
-  box-shadow: 0 -10px 50px #f39801;
+  box-shadow: 0 -5px 50px #8c00ff;
 }
 footer .row {
   display: flex;
@@ -139,12 +166,12 @@ footer .row p {
   margin-left: 20px;
 }
 .ustoz header .pages a {
-  color: #ffb237;
+  color: #8c00ff;
   font-size: 10px;
 }
 .ustoz header h2 {
   font-size: 20px;
-  color: #ffb237;
+  color: #8c00ff;
   margin-left: 20px;
 }
 .ustoz main {
@@ -162,7 +189,7 @@ footer .row p {
   margin: 0 auto;
   padding: 15px 10px;
   border-radius: 20px 20px 30px 0;
-  background: linear-gradient(180deg, transparent, transparent, #ffb237);
+  background: linear-gradient(180deg, transparent, transparent, #8c00ff);
 }
 .ustoz main .cards .card-content img {
   width: 250px;
@@ -212,7 +239,7 @@ footer .row p {
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.661);
   padding: 15px;
   border-radius: 15px;
-  border: 2px solid #ffb237;
+  border: 2px solid #8c00ff;
   transition: all 0.3s ease-in-out;
   opacity: 0;
   transform: translateY(100px);
@@ -229,7 +256,7 @@ footer .row p {
 .AloqaMenuBar h3,
 .AloqaMenuBar h4 {
   margin-bottom: 10px;
-  color: #ffb237;
+  color: #8c00ff;
   font-family: "Raleway";
 }
 .AloqaMenuBar p {
@@ -305,7 +332,7 @@ body .mobileMenuBar {
   left: 0;
   right: 0;
   background-color: rgba(21, 20, 20, 0.557);
-  border-left: 1px solid #ffb237;
+  border-left: 1px solid #8c00ff;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
   z-index: 1000;
@@ -327,6 +354,103 @@ body .mobileMenuBar ul {
   margin: 0;
 }
 
+.heropage main {
+  height: 100vh;
+}
+.heropage main .row {
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.heropage main .row .text {
+  margin-top: -100px;
+  width: 450px;
+}
+.heropage main .row .text .types {
+  display: flex;
+  gap: 40px;
+}
+.heropage main .row .text h1 {
+  font-size: 45px;
+  font-weight: 100;
+  color: black;
+  text-shadow: 0 0 5px rgb(255, 0, 255);
+  animation: glow 3s infinite alternate;
+}
+.heropage main .row .pic {
+  margin-top: 90px;
+}
+.heropage main .row .pic img {
+  width: 700px;
+  filter: drop-shadow(0 0 50px rgb(0, 255, 208));
+  animation: glow 3s infinite alternate-reverse;
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px rgb(255, 0, 255);
+    filter: drop-shadow(0 0 100px rgb(255, 0, 255));
+  }
+  50% {
+    text-shadow: 0 0 5px rgb(0, 255, 128);
+    text-shadow: 0 0 5px #00bbff;
+    filter: drop-shadow(0 0 100px #00ff80);
+  }
+  100% {
+    text-shadow: 0 0 5px rgb(0, 255, 208);
+    filter: drop-shadow(0 0 100px #00ffd0);
+  }
+}
+.heropage main .reytingcard {
+  margin-top: -200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.heropage main .reytingcard .card {
+  width: 450px;
+  padding: 15px 30px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+}
+.heropage main .reytingcard .card:hover {
+  border: 1px solid #8c00ff;
+  box-shadow: 0 0 50px #8c00ff;
+  transition: all 0.3s ease;
+}
+.heropage main .cta-box {
+  background: linear-gradient(145deg, #8c00ff, transparent, transparent, #8c00ff);
+  color: black;
+  padding: 30px;
+  border-radius: 30px 0 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+}
+.heropage main .cta-box .cta-text p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+.heropage main .cta-box .cta-btn {
+  background: #8c00ff;
+  color: white;
+  padding: 80px 20px;
+  border-radius: 50px 0 50px 0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+.heropage main .cta-box .cta-btn:hover {
+  transform: translateX(5px);
+}
+.heropage main .cta-box:hover .cta-btn {
+  transform: translateX(10px);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -342,12 +466,12 @@ body .mobileMenuBar ul {
 }
 
 ::-moz-selection {
-  background-color: #f39801;
+  background-color: rgba(140, 0, 255, 0.831372549);
   color: #fff;
 }
 
 ::selection {
-  background-color: #f39801;
+  background-color: rgba(140, 0, 255, 0.831372549);
   color: #fff;
 }
 

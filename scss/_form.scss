@@ -8,6 +8,21 @@ main {
             img {
                 width: 400px;
                 border-radius: 20px;
+                animation: glow 3s infinite alternate-reverse;
+                @keyframes glow {
+                    0% {
+                        text-shadow: 0 0 5px rgb(255, 0, 255);
+                        filter: drop-shadow(0 0 100px rgb(255, 0, 255));
+                    }
+                    50% {
+                        text-shadow: 0 0 5px rgb(0, 255, 128);
+                        filter: drop-shadow(0 0 100px rgb(0, 255, 128));
+                    }
+                    100% {
+                        text-shadow: 0 0 5px rgb(0, 255, 208);
+                        filter: drop-shadow(0 0 100px rgb(0, 255, 208));
+                    }
+                }
             }
         }
     }

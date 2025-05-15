@@ -8,6 +8,7 @@
 @import "_responsive.scss";
 @import "_contact.scss";
 @import "_mobileBar.scss";
+@import "_hero.scss";
 * {
     padding: 0;
     margin: 0;
@@ -22,7 +23,7 @@
 }
 
 ::selection {
-    background-color: #f39801;
+    background-color: #8c00ffd4;
     color: #fff;
 }
 

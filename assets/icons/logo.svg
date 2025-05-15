@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="250" height="100" viewBox="0 0 250 100">
   <!-- M -->
-  <rect x="10" y="10" width="20" height="80" fill="#F39801" />
-  <rect x="40" y="10" width="20" height="50" fill="#F39801" />
-  <rect x="70" y="10" width="20" height="80" fill="#F39801" />
+  <rect x="10" y="10" width="20" height="80" fill="#8c00ff" />
+  <rect x="35" y="10" width="20" height="50" fill="#00bbff" />
+  <rect x="60" y="10" width="20" height="80" fill="#8c00ff" />
 
   <!-- Dash "-" -->
-  <rect x="100" y="45" width="20" height="10" fill="#F39801" />
+  <rect x="85" y="45" width="30" height="15" fill="#00bbff" />
 
   <!-- I -->
-  <rect x="130" y="10" width="20" height="80" fill="#999999" />
+  <rect x="120" y="10" width="20" height="80" fill="#8c00ff" />
 
   <!-- T -->
-  <rect x="160" y="10" width="60" height="20" fill="#F39801" />
-  <rect x="185" y="10" width="20" height="80" fill="#F39801" />
+  <rect x="145" y="10" width="60" height="20" fill="#8c00ff" />
+  <rect x="165" y="10" width="20" height="80" fill="#8c00ff" />
 </svg>
