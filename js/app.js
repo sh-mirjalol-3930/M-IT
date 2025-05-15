@@ -53,3 +53,67 @@ form.addEventListener("submit", function (e) {
             alert("❌ Tarmoqda muammo bo'lishi mumkin.");
         });
 });
+
+const btn = document.getElementById("AloqaMenuBar");
+const menu = document.querySelector(".AloqaMenuBar");
+
+btn.addEventListener("click", function (e) {
+    e.stopPropagation(); // tugmadan bosilganda, tashqariga bosilgan deb o‘ylamasin
+
+    if (menu.classList.contains("active")) {
+        hideMenu();
+    } else {
+        menu.style.display = "block";
+
+        requestAnimationFrame(() => {
+            menu.classList.add("active");
+        });
+    }
+});
+
+// ✅ Tashqariga bosilganda menyuni yopish
+document.addEventListener("click", function (e) {
+    if (
+        menu.classList.contains("active") &&
+        !menu.contains(e.target) &&
+        e.target !== btn
+    ) {
+        hideMenu();
+    }
+});
+
+// ✅ ESC tugmasi bilan ham yopish (ixtiyoriy qo‘shimcha)
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && menu.classList.contains("active")) {
+        hideMenu();
+    }
+});
+
+// 🔧 Yopish funksiyasi (animatsiya bilan)
+function hideMenu() {
+    menu.classList.remove("active");
+
+    menu.addEventListener("transitionend", function hide() {
+        menu.style.display = "none";
+        menu.removeEventListener("transitionend", hide);
+    });
+}
+
+const mobileMenubtn = document.querySelector(".mobileMenu");
+const mobileMenuBar = document.querySelector(".mobileMenuBar");
+
+mobileMenubtn.addEventListener("click", function () {
+    if (mobileMenuBar.classList.contains("active")) {
+        mobileMenuBar.style.marginLeft = "-800px";
+        mobileMenuBar.classList.remove("active");
+    } else {
+        mobileMenuBar.style.marginLeft = "0";
+        mobileMenuBar.classList.add("active");
+    }
+});
+
+const closeBtn = document.querySelector(".closebtn");
+closeBtn.addEventListener("click", function () {
+    mobileMenuBar.style.marginLeft = "-800px";
+    mobileMenuBar.classList.remove("active");
+});

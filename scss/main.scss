@@ -6,6 +6,8 @@
 @import "_footer.scss";
 @import "_ustozpage.scss";
 @import "_responsive.scss";
+@import "_contact.scss";
+@import "_mobileBar.scss";
 * {
     padding: 0;
     margin: 0;
@@ -20,7 +22,7 @@
 }
 
 ::selection {
-    background-color: #a10b30be;
+    background-color: #f39801;
     color: #fff;
 }
 

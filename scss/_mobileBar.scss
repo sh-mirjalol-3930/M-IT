@@ -1,0 +1,41 @@
+body {
+    header {
+        .mobileMenu {
+            display: none;
+            background-color: transparent;
+            border: none;
+        }
+    }
+    .mobileMenuBar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: -500px;
+        width: 280px;
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(21, 20, 20, 0.557);
+        border-left: 1px solid $primary-color;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        z-index: 1000;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background-color: rgba(21, 20, 20, 0.557);
+            backdrop-filter: blur(10px);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

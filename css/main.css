@@ -27,7 +27,7 @@ header nav ul li a {
   transition: all 0.3s ease;
 }
 header nav ul li a:hover {
-  text-shadow: 0 0 5px #a31f34;
+  text-shadow: 0 0 5px #ffb237;
 }
 header .darkbtn {
   background-color: transparent;
@@ -35,7 +35,7 @@ header .darkbtn {
   color: black;
 }
 header .darkbtn:hover {
-  text-shadow: 0 0 5px #a31f34;
+  text-shadow: 0 0 5px #ffb237;
 }
 
 body.darkmode {
@@ -71,7 +71,7 @@ main form {
 }
 main form h3 {
   font-size: 30px;
-  color: #a31f34;
+  color: #ffb237;
   font-weight: 200;
 }
 main form input {
@@ -100,7 +100,7 @@ main form select:focus {
 }
 main form button {
   position: relative;
-  background-color: #a31f34;
+  background-color: #ffb237;
   color: #fff;
   border: none;
   border-radius: 0 0 20px 20px;
@@ -111,7 +111,7 @@ main form button {
   transition: all 0.3s ease;
 }
 main form button:hover {
-  box-shadow: 0 0 5px #a31f34;
+  box-shadow: 0 0 5px #ffb237;
 }
 
 footer {
@@ -119,8 +119,10 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 5px 0;
-  background-color: rgba(123, 28, 44, 0.8549019608);
-  box-shadow: 0 -10px 50px #a31f34;
+  background-color: rgba(243, 150, 1, 0.8196078431);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  box-shadow: 0 -10px 50px #f39801;
 }
 footer .row {
   display: flex;
@@ -137,12 +139,12 @@ footer .row p {
   margin-left: 20px;
 }
 .ustoz header .pages a {
-  color: #a31f34;
+  color: #ffb237;
   font-size: 10px;
 }
 .ustoz header h2 {
   font-size: 20px;
-  color: #a31f34;
+  color: #ffb237;
   margin-left: 20px;
 }
 .ustoz main {
@@ -160,7 +162,7 @@ footer .row p {
   margin: 0 auto;
   padding: 15px 10px;
   border-radius: 20px 20px 30px 0;
-  background: linear-gradient(180deg, transparent, transparent, #a31f34);
+  background: linear-gradient(180deg, transparent, transparent, #ffb237);
 }
 .ustoz main .cards .card-content img {
   width: 250px;
@@ -183,105 +185,148 @@ footer .row p {
   width: 300px;
 }
 
-@media only screen and (max-width: 575.98px) {
-  .header {
-    padding: 10px 0;
-  }
-  .header__nav {
-    display: none;
-  }
-  .header__mobile-menu {
-    display: block;
-  }
-  .hero__content {
-    text-align: center;
-    padding: 40px 0;
-  }
-  .hero__title {
-    font-size: 32px;
-  }
-  .hero__description {
-    font-size: 16px;
-  }
-  .section {
-    padding: 40px 0;
-  }
-  .section__title {
-    font-size: 28px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767.98px) {
-  .header {
-    padding: 15px 0;
-  }
-  .hero__title {
-    font-size: 36px;
-  }
-  .section {
-    padding: 50px 0;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  .header {
-    padding: 20px 0;
-  }
-  .hero__title {
-    font-size: 42px;
-  }
-  .section {
-    padding: 60px 0;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-  .container {
-    max-width: 960px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-@media print {
-  .header__nav,
-  .footer {
+@media (max-width: 767.98px) {
+  main .pic {
     display: none;
   }
   .container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-}
-@media only screen and (max-width: 575.98px) {
-  .pic img {
-    display: none;
-  }
-  header {
-    padding: 0 30px;
+    padding: 0 50px;
   }
   header nav {
     display: none;
   }
-  main .row {
-    padding: 100px 30px;
-    flex-wrap: wrap;
-  }
-  main .row .pic img {
-    width: 100%;
-    border-radius: 20px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767.98px) {
-  .pic img {
+  header .darkbtn {
     display: none;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  .pic img {
-    display: none;
+  header .container .mobileMenu {
+    display: block;
   }
 }
+.AloqaMenuBar {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  width: 450px;
+  background: rgba(46, 44, 37, 0.8745098039);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.661);
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #ffb237;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(100px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 999;
+  margin-left: -300px;
+}
+.AloqaMenuBar.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(-100px);
+}
+.AloqaMenuBar h3,
+.AloqaMenuBar h4 {
+  margin-bottom: 10px;
+  color: #ffb237;
+  font-family: "Raleway";
+}
+.AloqaMenuBar p {
+  color: #fff;
+  font-weight: 100;
+  font-family: "Krub";
+}
+.AloqaMenuBar p b {
+  color: white;
+  font-family: "Raleway";
+}
+.AloqaMenuBar a {
+  display: block;
+  margin-top: 5px;
+  color: #ffffff;
+  font-family: "Fredoka";
+  font-weight: 100;
+  text-decoration: none;
+}
+.AloqaMenuBar a:hover {
+  text-decoration: underline;
+}
+.AloqaMenuBar form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.AloqaMenuBar form input,
+.AloqaMenuBar form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.AloqaMenuBar form button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.AloqaMenuBar form button:hover {
+  background: #0056b3;
+}
+
+.AloqaMenuBar {
+  display: none;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.3s ease-in-out;
+}
+.AloqaMenuBar.active {
+  opacity: 1;
+  margin-left: 100px;
+  transform: translateY(0);
+}
+
+body header .mobileMenu {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+body .mobileMenuBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -500px;
+  width: 280px;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(21, 20, 20, 0.557);
+  border-left: 1px solid #ffb237;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+}
+body .mobileMenuBar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(21, 20, 20, 0.557);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+body .mobileMenuBar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -297,12 +342,12 @@ footer .row p {
 }
 
 ::-moz-selection {
-  background-color: rgba(161, 11, 48, 0.7450980392);
+  background-color: #f39801;
   color: #fff;
 }
 
 ::selection {
-  background-color: rgba(161, 11, 48, 0.7450980392);
+  background-color: #f39801;
   color: #fff;
 }
 

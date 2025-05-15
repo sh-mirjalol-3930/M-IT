@@ -1,0 +1,95 @@
+.AloqaMenuBar {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 450px;
+    background: #2e2c25df;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.661);
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid $primary-color;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(100px);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    margin-left: -300px;
+
+    // Aktiv holat
+    &.active {
+        display: block;
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+
+    h3,
+    h4 {
+        margin-bottom: 10px;
+        color: $primary-color;
+        font-family: "Raleway";
+    }
+
+    p {
+        color: #fff;
+        font-weight: 100;
+        font-family: "Krub";
+
+        b {
+            color: white;
+            font-family: "Raleway";
+        }
+    }
+
+    a {
+        display: block;
+        margin-top: 5px;
+        color: #ffffff;
+        font-family: "Fredoka";
+        font-weight: 100;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+            border-radius: 4px;
+
+            &:hover {
+                background: #0056b3;
+            }
+        }
+    }
+}
+.AloqaMenuBar {
+    display: none;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.3s ease-in-out;
+
+    &.active {
+        opacity: 1;
+        margin-left: 100px;
+        transform: translateY(0);
+    }
+}
