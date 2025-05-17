@@ -53,9 +53,6 @@ body.darkmode main {
 body.darkmode main .container .row .text h1 {
   color: #fff;
 }
-body.darkmode main .container .row .pic img {
-  filter: drop-shadow(0 0 50px rgb(255, 0, 255));
-}
 body.darkmode main .container h1 {
   color: #fff;
 }
