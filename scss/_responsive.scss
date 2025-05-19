@@ -26,6 +26,46 @@
             }
         }
     }
+    .heropage {
+        main {
+            margin-top: 200px;
+            .reytingcard {
+                margin-bottom: -1500px;
+            }
+
+            .hero {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .pic {
+                    padding: 0;
+                    display: block;
+                    transform: scale(0.6);
+                    // margin-top: -300px;
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+            .row {
+                .cta-box {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: -450px;
+                    // height: 500px;
+                    p {
+                        font-size: 12px;
+                        font-weight: 100;
+                    }
+                    a {
+                        padding: 80px 80px;
+                        font-size: 15px;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // Medium devices (tablets, 768px and up)
