@@ -2,7 +2,6 @@
 
 // Small devices (phones, less than 768px)
 @media (max-width: 767.98px) {
-    // Add your styles for small devices here
     main {
         .pic {
             display: none;
@@ -21,18 +20,16 @@
         .container {
             .mobileMenu {
                 display: block;
-                .darkbtn {
-                }
             }
         }
     }
     .heropage {
-        main {
+        width: 500px;
+        background: linear-gradient(90deg, transparent, transparent, red) main {
             margin-top: 200px;
             .reytingcard {
                 margin-bottom: -1500px;
             }
-
             .hero {
                 display: flex;
                 flex-direction: column;
@@ -41,7 +38,6 @@
                     padding: 0;
                     display: block;
                     transform: scale(0.6);
-                    // margin-top: -300px;
                     img {
                         width: 100px;
                     }
@@ -51,14 +47,13 @@
                 .cta-box {
                     display: flex;
                     flex-direction: column;
-                    margin-left: -450px;
-                    // height: 500px;
+                    margin-left: -400px;
                     p {
                         font-size: 12px;
                         font-weight: 100;
                     }
                     a {
-                        padding: 80px 80px;
+                        padding: 80px 50px;
                         font-size: 15px;
                         font-weight: 200;
                     }
@@ -69,16 +64,62 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {
-    // Add your styles for medium devices here
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    // Add your styles for large devices here
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    // Add your styles for extra large devices here
+@media (min-width: 768px) and (max-width: 999.98px) {
+    main {
+        .pic {
+            display: block;
+            transform: scale(0.8);
+        }
+    }
+    .container {
+        padding: 0 80px;
+    }
+    header {
+        nav {
+            display: flex;
+        }
+        .darkbtn {
+            display: block;
+        }
+        .container {
+            .mobileMenu {
+                display: none;
+            }
+        }
+    }
+    .heropage {
+        main {
+            margin-top: 120px;
+            .reytingcard {
+                margin-bottom: -800px;
+            }
+            .hero {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                .pic {
+                    padding: 0 20px;
+                    img {
+                        width: 150px;
+                    }
+                }
+            }
+            .row {
+                .cta-box {
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: -100px;
+                    p {
+                        font-size: 14px;
+                        font-weight: 200;
+                    }
+                    a {
+                        padding: 40px 30px;
+                        font-size: 16px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
 }

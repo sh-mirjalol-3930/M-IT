@@ -242,6 +242,9 @@ footer .row p {
   header .container .mobileMenu {
     display: block;
   }
+  .heropage {
+    width: 500px;
+  }
   .heropage main {
     margin-top: 200px;
   }
@@ -264,16 +267,65 @@ footer .row p {
   .heropage main .row .cta-box {
     display: flex;
     flex-direction: column;
-    margin-left: -450px;
+    margin-left: -400px;
   }
   .heropage main .row .cta-box p {
     font-size: 12px;
     font-weight: 100;
   }
   .heropage main .row .cta-box a {
-    padding: 80px 80px;
+    padding: 80px 50px;
     font-size: 15px;
     font-weight: 200;
+  }
+}
+@media (min-width: 768px) and (max-width: 999.98px) {
+  main .pic {
+    display: block;
+    transform: scale(0.8);
+  }
+  .container {
+    padding: 0 80px;
+  }
+  header nav {
+    display: flex;
+  }
+  header .darkbtn {
+    display: block;
+  }
+  header .container .mobileMenu {
+    display: none;
+  }
+  .heropage main {
+    margin-top: 120px;
+  }
+  .heropage main .reytingcard {
+    margin-bottom: -800px;
+  }
+  .heropage main .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .heropage main .hero .pic {
+    padding: 0 20px;
+  }
+  .heropage main .hero .pic img {
+    width: 150px;
+  }
+  .heropage main .row .cta-box {
+    display: flex;
+    flex-direction: row;
+    margin-left: -100px;
+  }
+  .heropage main .row .cta-box p {
+    font-size: 14px;
+    font-weight: 200;
+  }
+  .heropage main .row .cta-box a {
+    padding: 40px 30px;
+    font-size: 16px;
+    font-weight: 300;
   }
 }
 .AloqaMenuBar {
