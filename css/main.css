@@ -187,9 +187,20 @@ footer .row p {
   justify-content: space-between;
   flex-direction: row;
   overflow: scroll;
+  /* Custom scrollbar styles */
   align-items: center;
   gap: 20px;
-  margin: 20px 0;
+  margin: 0px 0;
+  padding-bottom: 20px;
+}
+.ustoz main .cards::-webkit-scrollbar {
+  height: 8px;
+  background: transparent;
+  border-radius: 10px;
+}
+.ustoz main .cards::-webkit-scrollbar-thumb {
+  background: linear-gradient(360deg, transparent, #8c00ff, #8c00ff);
+  border-radius: 8px;
 }
 .ustoz main .cards .card-content {
   margin: 0 auto;
@@ -211,121 +222,81 @@ footer .row p {
 .ustoz main .cards .card-content:hover img {
   transform: translateY(-10px);
 }
-.ustoz main .cards::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-.ustoz main .cards::-webkit-scrollbar-thumb {
-  width: 10px;
-  height: 10px;
-  background-color: #8c00ff;
+.ustoz main .details {
+  border: 1px solid blue;
 }
 .ustoz main .details .row {
-  padding: 0px 300px;
+  padding: 0px 200px;
 }
 .ustoz main .details .row img {
-  width: 300px;
+  width: 350px;
+  border-radius: 0 80px 0 100px;
+}
+.ustoz main .details .row .detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.ustoz main .details .row .detail-content h3 {
+  font-size: 25px;
+  color: #8c00ff;
+}
+.ustoz main .details .row .detail-content p {
+  font-weight: 200;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 @media (max-width: 767.98px) {
-  main .pic {
-    display: none;
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100vw;
   }
   .container {
-    padding: 0 50px;
-  }
-  header nav {
-    display: none;
-  }
-  header .darkbtn {
-    display: none;
-  }
-  header .container .mobileMenu {
-    display: block;
-  }
-  .heropage {
-    width: 500px;
+    padding: 0 16px;
   }
   .heropage main {
     margin-top: 200px;
   }
-  .heropage main .reytingcard {
-    margin-bottom: -1500px;
-  }
   .heropage main .hero {
     display: flex;
     flex-direction: column;
-    align-items: center;
+  }
+  .heropage main .hero .text h1 {
+    font-size: 20px;
   }
   .heropage main .hero .pic {
-    padding: 0;
     display: block;
-    transform: scale(0.6);
   }
   .heropage main .hero .pic img {
-    width: 100px;
+    transform: scale(0.7);
   }
-  .heropage main .row .cta-box {
+  .heropage main .lastdiv {
     display: flex;
-    flex-direction: column;
-    margin-left: -400px;
+    flex-direction: column-reverse;
   }
-  .heropage main .row .cta-box p {
-    font-size: 12px;
-    font-weight: 100;
+  .heropage main .lastdiv .reytingcard {
+    padding-top: 230px;
   }
-  .heropage main .row .cta-box a {
-    padding: 80px 50px;
-    font-size: 15px;
-    font-weight: 200;
+}
+@media (max-width: 699.98px) {
+  .pic {
+    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 999.98px) {
-  main .pic {
-    display: block;
-    transform: scale(0.8);
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100vw;
   }
   .container {
-    padding: 0 80px;
-  }
-  header nav {
-    display: flex;
-  }
-  header .darkbtn {
-    display: block;
-  }
-  header .container .mobileMenu {
-    display: none;
-  }
-  .heropage main {
-    margin-top: 120px;
-  }
-  .heropage main .reytingcard {
-    margin-bottom: -800px;
-  }
-  .heropage main .hero {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .heropage main .hero .pic {
-    padding: 0 20px;
-  }
-  .heropage main .hero .pic img {
-    width: 150px;
-  }
-  .heropage main .row .cta-box {
-    display: flex;
-    flex-direction: row;
-    margin-left: -100px;
-  }
-  .heropage main .row .cta-box p {
-    font-size: 14px;
-    font-weight: 200;
-  }
-  .heropage main .row .cta-box a {
-    padding: 40px 30px;
-    font-size: 16px;
-    font-weight: 300;
+    padding: 0 32px;
   }
 }
 .AloqaMenuBar {
@@ -578,4 +549,8 @@ body .mobileMenuBar ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+main {
+  padding-bottom: 600px;
 }/*# sourceMappingURL=main.css.map */
