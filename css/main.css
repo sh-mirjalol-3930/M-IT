@@ -551,6 +551,18 @@ body .mobileMenuBar ul {
   margin-left: -90px;
   margin-top: -60px;
 }
+.heropage main .banner:hover .airpods {
+  transform: rotate(30deg) scale(1.1) translateY(-30px);
+}
+.heropage main .banner:hover .watch {
+  transform: scale(0.9) rotate(30deg);
+}
+.heropage main .banner:hover .phone {
+  transform: scaleX(1.1);
+}
+.heropage main .banner:hover .joystick {
+  transform: rotate(-30deg) scale(1.2) translateY(-20px);
+}
 
 * {
   padding: 0;

@@ -144,6 +144,20 @@
                 margin-left: -90px;
                 margin-top: -60px;
             }
+            &:hover {
+                .airpods {
+                    transform: rotate(30deg) scale(1.1) translateY(-30px);
+                }
+                .watch {
+                    transform: scale(0.9) rotate(30deg);
+                }
+                .phone {
+                    transform: scaleX(1.1);
+                }
+                .joystick {
+                    transform: rotate(-30deg) scale(1.2) translateY(-20px);
+                }
+            }
         }
     }
 }
