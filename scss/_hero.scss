@@ -108,5 +108,42 @@
                 }
             }
         }
+        .banner {
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.623);
+            padding: 20px 50px;
+            border-radius: 20px;
+            color: black;
+            // font-size: 18px;
+            // overflow: hidden;
+            img {
+                position: absolute;
+                width: 100px;
+                margin-left: 400px;
+                // background-color: red;
+            }
+            .joystick {
+                margin-left: -95px;
+                transform: translateX(-30px);
+                margin-top: 80px;
+                transform: rotate(30deg);
+            }
+            .giftpic {
+                margin-top: -70px;
+                margin-left: 600px;
+            }
+            .phone {
+                margin-top: 108px;
+                margin-left: 580px;
+            }
+            .watch {
+                margin-top: -80px;
+                transform: rotate(25deg);
+            }
+            .airpods {
+                margin-left: -90px;
+                margin-top: -60px;
+            }
+        }
     }
 }

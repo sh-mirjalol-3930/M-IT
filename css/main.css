@@ -222,9 +222,6 @@ footer .row p {
 .ustoz main .cards .card-content:hover img {
   transform: translateY(-10px);
 }
-.ustoz main .details {
-  border: 1px solid blue;
-}
 .ustoz main .details .row {
   padding: 0px 200px;
 }
@@ -519,6 +516,40 @@ body .mobileMenuBar ul {
 }
 .heropage main .cta-box:hover .cta-btn {
   transform: translateX(10px);
+}
+.heropage main .banner {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.623);
+  padding: 20px 50px;
+  border-radius: 20px;
+  color: black;
+}
+.heropage main .banner img {
+  position: absolute;
+  width: 100px;
+  margin-left: 400px;
+}
+.heropage main .banner .joystick {
+  margin-left: -95px;
+  transform: translateX(-30px);
+  margin-top: 80px;
+  transform: rotate(30deg);
+}
+.heropage main .banner .giftpic {
+  margin-top: -70px;
+  margin-left: 600px;
+}
+.heropage main .banner .phone {
+  margin-top: 108px;
+  margin-left: 580px;
+}
+.heropage main .banner .watch {
+  margin-top: -80px;
+  transform: rotate(25deg);
+}
+.heropage main .banner .airpods {
+  margin-left: -90px;
+  margin-top: -60px;
 }
 
 * {
