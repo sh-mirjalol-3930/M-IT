@@ -301,6 +301,15 @@ body {
     overflow-x: hidden;
     width: 100vw;
   }
+  header .container nav {
+    display: none;
+  }
+  header .container .darkbtn {
+    display: none;
+  }
+  header .container .row .mobileMenu {
+    display: block;
+  }
   .container {
     padding: 0 30px;
   }

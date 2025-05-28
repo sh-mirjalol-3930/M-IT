@@ -73,6 +73,21 @@ body {
         overflow-x: hidden;
         width: 100vw;
     }
+    header {
+        .container {
+            nav {
+                display: none;
+            }
+            .darkbtn {
+                display: none; // Dark mode tugmasini yashirish
+            }
+            .row {
+                .mobileMenu {
+                    display: block; // Mobil menyuni ko‘rsatish
+                }
+            }
+        }
+    }
     .container {
         padding: 0 30px; // 50px o‘rniga kichikroq
     }
