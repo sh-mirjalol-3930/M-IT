@@ -27,7 +27,7 @@ header nav ul li a {
   transition: all 0.3s ease;
 }
 header nav ul li a:hover {
-  text-shadow: 0 0 5px #00ff99;
+  text-shadow: 0 0 5px #8c00ff;
 }
 header .darkbtn {
   background-color: transparent;
@@ -35,7 +35,7 @@ header .darkbtn {
   color: black;
 }
 header .darkbtn:hover {
-  text-shadow: 0 0 5px #00ff99;
+  text-shadow: 0 0 5px #8c00ff;
 }
 
 body.darkmode {
@@ -95,7 +95,7 @@ main form {
 }
 main form h3 {
   font-size: 30px;
-  color: #00ff99;
+  color: #8c00ff;
   font-weight: 200;
 }
 main form input {
@@ -124,7 +124,7 @@ main form select:focus {
 }
 main form button {
   position: relative;
-  background-color: #00ff99;
+  background-color: #8c00ff;
   color: #fff;
   border: none;
   border-radius: 0 0 20px 20px;
@@ -135,7 +135,7 @@ main form button {
   transition: all 0.3s ease;
 }
 main form button:hover {
-  box-shadow: 0 0 5px #00ff99;
+  box-shadow: 0 0 5px #8c00ff;
 }
 main .about {
   padding: 20px 70px;
@@ -171,12 +171,12 @@ footer .row p {
   margin-left: 20px;
 }
 .ustoz header .pages a {
-  color: #00ff99;
+  color: #8c00ff;
   font-size: 10px;
 }
 .ustoz header h2 {
   font-size: 20px;
-  color: #00ff99;
+  color: #8c00ff;
   margin-left: 20px;
 }
 .ustoz main {
@@ -199,14 +199,14 @@ footer .row p {
   border-radius: 10px;
 }
 .ustoz main .cards::-webkit-scrollbar-thumb {
-  background: linear-gradient(360deg, transparent, #00ff99, #00ff99);
+  background: linear-gradient(360deg, transparent, #8c00ff, #8c00ff);
   border-radius: 8px;
 }
 .ustoz main .cards .card-content {
   margin: 0 auto;
   padding: 15px 10px;
   border-radius: 20px 20px 30px 0;
-  background: linear-gradient(180deg, transparent, transparent, #00ff99);
+  background: linear-gradient(180deg, transparent, transparent, #8c00ff);
 }
 .ustoz main .cards .card-content img {
   width: 250px;
@@ -236,7 +236,7 @@ footer .row p {
 }
 .ustoz main .details .row .detail-content h3 {
   font-size: 25px;
-  color: #00ff99;
+  color: #8c00ff;
 }
 .ustoz main .details .row .detail-content p {
   font-weight: 200;
@@ -324,7 +324,7 @@ body {
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.661);
   padding: 15px;
   border-radius: 15px;
-  border: 2px solid #00ff99;
+  border: 2px solid #8c00ff;
   transition: all 0.3s ease-in-out;
   opacity: 0;
   transform: translateY(100px);
@@ -341,7 +341,7 @@ body {
 .AloqaMenuBar h3,
 .AloqaMenuBar h4 {
   margin-bottom: 10px;
-  color: #00ff99;
+  color: #8c00ff;
   font-family: "Raleway";
 }
 .AloqaMenuBar p {
@@ -417,7 +417,7 @@ body .mobileMenuBar {
   left: 0;
   right: 0;
   background-color: rgba(21, 20, 20, 0.557);
-  border-left: 1px solid #00ff99;
+  border-left: 1px solid #8c00ff;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
   z-index: 1000;
@@ -462,7 +462,7 @@ body .slidebar ul a {
   color: white;
   text-decoration: none;
   font-weight: 300;
-  text-shadow: 0 0 5px #00ff99;
+  text-shadow: 0 0 5px #8c00ff;
 }
 body .slidebar .darkbtn {
   margin-top: 25px;
@@ -530,12 +530,12 @@ body .slidebar.active {
   border: 1px solid transparent;
 }
 .heropage main .reytingcard .card:hover {
-  border: 1px solid #00ff99;
-  box-shadow: 0 0 50px #00ff99;
+  border: 1px solid #8c00ff;
+  box-shadow: 0 0 50px #8c00ff;
   transition: all 0.3s ease;
 }
 .heropage main .cta-box {
-  background: linear-gradient(145deg, #00ff99, transparent, transparent, #00ff99);
+  background: linear-gradient(145deg, #8c00ff, transparent, transparent, #8c00ff);
   color: black;
   padding: 30px;
   border-radius: 30px 0 30px 0;
@@ -551,7 +551,7 @@ body .slidebar.active {
   font-size: 1.2rem;
 }
 .heropage main .cta-box .cta-btn {
-  background: #00ff99;
+  background: #8c00ff;
   color: white;
   padding: 80px 20px;
   border-radius: 50px 0 50px 0;
