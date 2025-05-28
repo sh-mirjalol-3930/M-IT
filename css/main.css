@@ -257,6 +257,15 @@ body {
   .container {
     padding: 0 50px;
   }
+  header .container nav {
+    display: none;
+  }
+  header .container .darkbtn {
+    display: none;
+  }
+  header .container .row .mobileMenu {
+    display: block;
+  }
   .heropage main {
     margin-top: 200px;
   }
@@ -293,7 +302,7 @@ body {
     width: 100vw;
   }
   .container {
-    padding: 0 32px;
+    padding: 0 30px;
   }
 }
 .AloqaMenuBar {
@@ -419,6 +428,38 @@ body .mobileMenuBar ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+body .slidebar {
+  padding: 10px 20px;
+  position: fixed;
+  width: 200px;
+  height: 100vh;
+  left: -250px;
+  top: 0;
+  background-color: rgba(44, 41, 41, 0.839);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+body .slidebar button {
+  background-color: transparent;
+  border: none;
+}
+body .slidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .slidebar ul a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  text-shadow: 0 0 5px #8c00ff;
+}
+body .slidebar .darkbtn {
+  margin-top: 25px;
+}
+body .slidebar.active {
+  left: 0px;
 }
 
 .heropage main {

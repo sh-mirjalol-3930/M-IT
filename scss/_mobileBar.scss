@@ -38,4 +38,37 @@ body {
             margin: 0;
         }
     }
+    .slidebar {
+        // display: none;
+        padding: 10px 20px;
+        position: fixed;
+        width: 200px;
+        height: 100vh;
+        left: -250px;
+        top: 0;
+        background-color: rgba(44, 41, 41, 0.839);
+        backdrop-filter: blur(10px);
+        button {
+            background-color: transparent;
+            border: none;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: 300;
+                text-shadow: 0 0 5px $primary-color;
+            }
+        }
+        .darkbtn {
+            margin-top: 25px;
+        }
+    }
+    .slidebar.active {
+        // display: block;
+        left: 0px;
+    }
 }

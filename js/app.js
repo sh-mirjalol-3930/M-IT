@@ -2,6 +2,10 @@ const darkBtn = document.querySelector(".darkbtn");
 darkBtn.addEventListener("click", () => {
     document.body.classList.toggle("darkmode");
 });
+const slide = document.querySelector(".slidebar");
+function toggleSlide() {
+    slide.classList.toggle("active");
+}
 
 const TOKEN = "7260749852:AAHJ4BUjRbbpmdXjOjv935Zt0VruYcqz8mY";
 const CHAT_ID = "6029850068";
@@ -58,62 +62,32 @@ const btn = document.getElementById("AloqaMenuBar");
 const menu = document.querySelector(".AloqaMenuBar");
 
 btn.addEventListener("click", function (e) {
-    e.stopPropagation(); // tugmadan bosilganda, tashqariga bosilgan deb o‘ylamasin
-
+    e.stopPropagation();
     if (menu.classList.contains("active")) {
-        hideMenu();
+        menu.classList.remove("active");
+        menu.style.display = "none";
     } else {
         menu.style.display = "block";
-
         requestAnimationFrame(() => {
             menu.classList.add("active");
         });
     }
 });
 
-// ✅ Tashqariga bosilganda menyuni yopish
 document.addEventListener("click", function (e) {
     if (
         menu.classList.contains("active") &&
         !menu.contains(e.target) &&
         e.target !== btn
     ) {
-        hideMenu();
+        menu.classList.remove("active");
+        menu.style.display = "none";
     }
 });
 
-// ✅ ESC tugmasi bilan ham yopish (ixtiyoriy qo‘shimcha)
 document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && menu.classList.contains("active")) {
-        hideMenu();
-    }
-});
-
-// 🔧 Yopish funksiyasi (animatsiya bilan)
-function hideMenu() {
-    menu.classList.remove("active");
-
-    menu.addEventListener("transitionend", function hide() {
+        menu.classList.remove("active");
         menu.style.display = "none";
-        menu.removeEventListener("transitionend", hide);
-    });
-}
-
-const mobileMenubtn = document.querySelector(".mobileMenu");
-const mobileMenuBar = document.querySelector(".mobileMenuBar");
-
-mobileMenubtn.addEventListener("click", function () {
-    if (mobileMenuBar.classList.contains("active")) {
-        mobileMenuBar.style.marginLeft = "-800px";
-        mobileMenuBar.classList.remove("active");
-    } else {
-        mobileMenuBar.style.marginLeft = "0";
-        mobileMenuBar.classList.add("active");
     }
-});
-
-const closeBtn = document.querySelector(".closebtn");
-closeBtn.addEventListener("click", function () {
-    mobileMenuBar.style.marginLeft = "-800px";
-    mobileMenuBar.classList.remove("active");
 });
