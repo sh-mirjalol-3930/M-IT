@@ -1,12 +1,3 @@
-const darkBtn = document.querySelector(".darkbtn");
-darkBtn.addEventListener("click", () => {
-    document.body.classList.toggle("darkmode");
-});
-const slide = document.querySelector(".slidebar");
-function toggleSlide() {
-    slide.classList.toggle("active");
-}
-
 const TOKEN = "7260749852:AAHJ4BUjRbbpmdXjOjv935Zt0VruYcqz8mY";
 const CHAT_ID = "6029850068";
 
@@ -91,3 +82,12 @@ document.addEventListener("keydown", function (e) {
         menu.style.display = "none";
     }
 });
+
+const darkBtn = document.querySelector(".darkbtn");
+darkBtn.addEventListener("click", () => {
+    document.body.classList.toggle("darkmode");
+});
+const slide = document.querySelector(".slidebar");
+function toggleSlide() {
+    slide.classList.toggle("active");
+}
